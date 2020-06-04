@@ -20,7 +20,8 @@ train_set, test_set = train_test_split(data, test_size = 0.20, random_state=10)
 
 
 
-print(train_set.isnull().sum()) 
+print(round(train_set.isnull().mean(),2)) 
+print(round(test_set.isnull().mean(), 2))
 # print(train_set.shape)
 # print(train_set.isnull().sum())
 # print(data.head(5))
